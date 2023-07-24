@@ -27,13 +27,15 @@ def calcular_serie_de_fibonacci(n: int) -> str:
     """Escreva aqui em baixo a sua solução"""
     f1 = 0
     f2 = 1
+
+    lista = list()
     for _ in range(n):
-        f = f2 + f1
+        lista.append(f2)
+        f = f1 + f2
         f1 = f2
         f2 = f
-        print(f, end=' ')
 
+    lista_string = [str(num) for num in lista]
 
-
-if __name__ == '__main__':
-    calcular_serie_de_fibonacci(5)
+    string_numeros = ', '.join(lista_string)
+    return string_numeros
