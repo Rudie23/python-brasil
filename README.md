@@ -22,6 +22,17 @@ Assim você consegue evoluir com a certeza de entender os conceitos ;)
 3. Use o padrão de nomenclatura para os scritps `ex_dd_nome_do_arquivo`. Ou seja, comece sempre com o sufixo "ex_" seguindo do número do exercício. Assim a ordem alfabética dos arquivos ficará na mesma sequência que os exercícios da lista.
 4. Crie um doctest para o exercício;
 
+## Criar um ambiente virtual python e ativá-lo
+```sh
+python -m venv .venv --upgrade-deps && source .venv/bin/activate
+```
+
+## Instalar as bibliotecas (libs) necessárias para o ambiente virtual recém criado
+```sh
+pip install -r requirements.txt
+```
+
+
 Exemplo de código para testar o exercício Olá Mundo ex_01.py:
 
 ```
@@ -40,6 +51,6 @@ python -m doctest -f <nome_do_pacote>/<nome_do_script>
 Basta substituir o <nome_do_pacote> pelo nome do pacote e <nome_do_script> pelo nome do escript.
 Exemplo para rodar os testes do primeiro exercício:
 
-```
+```sh
 python -m doctest -f estrutura_sequencial/ex_01.py 
 ```

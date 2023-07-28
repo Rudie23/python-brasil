@@ -38,16 +38,13 @@ def obter_numero_valido():
     elementos = input('Insira os elementos ')
     lista = []
 
-
     try:
         for elemento in elementos:
-
             numero = int(elemento)
             lista.append(numero)
             print(numero)
 
     except ValueError:
-            
         print(f'Número inválido: {numero}')
 
 
