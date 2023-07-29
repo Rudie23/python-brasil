@@ -26,13 +26,22 @@ Faça uma função que informe a quantidade de dígitos de um determinado númer
 
 
 def imprimir_qtde_digitos_do_inteiro(param):
-    numeros = str(param)
-    for caracter in numeros:
-        if not caracter.isnumeric():
-            numeros_sem = numeros.strip(caracter)
-            sem = len(numeros_sem)
-            print(sem)
+    caracteres = str(param)
+    numeros = []
+    simbolos = []
+    for caracter in caracteres:
+        if caracter.isnumeric():
+            numeros.append(caracter)
+        elif not caracter.isnumeric():
+            simbolos.append(caracter)
+
+    if len(simbolos) > 0 and "-" in simbolos:
+        print(len(numeros))
+    elif len(simbolos) > 0 and "." or "," in simbolos:
+        print("O valor informado não é um inteiro")
+    else:
+        print(len(numeros))
 
 
 if __name__ == '__main__':
-    imprimir_qtde_digitos_do_inteiro(-273)
+    imprimir_qtde_digitos_do_inteiro(-452.2)

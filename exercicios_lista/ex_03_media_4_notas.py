@@ -25,5 +25,5 @@ def mostrar_notas_e_media(inteiros: list) -> str:
 
 
 if __name__ == '__main__':
-    lista = [0, 1, 2, 3]
+    lista = [3, 4, 5, 7]
     mostrar_notas_e_media(lista)

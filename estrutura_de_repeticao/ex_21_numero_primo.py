@@ -37,5 +37,26 @@ divisível somente por ele mesmo e por 1.
 """
 
 
-def primo(n: int) -> bool:
+def primo(num: int) -> bool:
     """Escreva aqui em baixo a sua solução"""
+    # Program to check if a number is prime or not
+
+    # define a flag variable
+    flag = False
+
+    if num == 1 or num == 0:
+        return flag
+    elif num > 1:
+        # check for factors
+        for i in range(2, num):
+            if (num % i) == 0:
+                # if factor is found, set flag to True
+                flag = True
+                # break out of loop
+                break
+
+        # check if flag is True
+        if flag:
+            print('False')
+        else:
+            print('True')

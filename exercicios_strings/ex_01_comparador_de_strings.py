@@ -41,7 +41,7 @@ def comparar(s1: str, s2: str):
               f'String 2: {s2}\n'
               f'Tamanho de "{s1}": {len(s1)} caracteres\n'
               f'Tamanho de "{s2}": {len(s2)} caracteres\n'
-              f'As duas strings possuem mesmo tamanho.\n'
+              'As duas strings possuem mesmo tamanho.\n'
               'As duas strings possuem conteúdo diferente.')
 
     else:
@@ -51,4 +51,3 @@ def comparar(s1: str, s2: str):
               f'Tamanho de "{s2}": {len(s2)} caracteres\n'
               'As duas strings são de tamanhos diferentes.\n'
               'As duas strings possuem conteúdo diferente.')
-

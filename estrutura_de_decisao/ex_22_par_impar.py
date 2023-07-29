@@ -21,7 +21,10 @@ Faça um Programa que peça um número inteiro e determine se ele é par ou impa
 
 
 def par_impar(valor: int) -> str:
+    """Escreva seu código aqui"""
+    par = 'Par'
+    impar = 'Impar'
     if valor % 2 == 0:
-        return 'Par'
+        return par
     else:
-        return 'Impar'
+        return impar
