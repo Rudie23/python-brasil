@@ -57,6 +57,6 @@ def primo(num: int) -> bool:
 
         # check if flag is True
         if flag:
-            print('False')
+            return False
         else:
-            print('True')
+            return True
